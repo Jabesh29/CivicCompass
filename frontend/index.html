@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CivicCompass AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>CivicCompass AI</h1>
+        <p class="subtitle">Find Government Schemes You Are Eligible For</p>
+
+        <form id="eligibilityForm">
+            <label>Age</label>
+            <input type="number" id="age" required>
+
+            <label>Annual Income (₹)</label>
+            <input type="number" id="income" required>
+
+            <label>Category</label>
+            <select id="category">
+                <option value="General">General</option>
+                <option value="OBC">OBC</option>
+                <option value="SC">SC</option>
+                <option value="ST">ST</option>
+            </select>
+
+            <label>Occupation</label>
+            <input type="text" id="occupation" required>
+
+            <label>Language</label>
+            <select id="language">
+                <option value="en">English</option>
+                <option value="ta">Tamil</option>
+                <option value="hi">Hindi</option>
+            </select>
+
+            <button type="submit">Check Eligibility</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
