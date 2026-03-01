@@ -6,8 +6,9 @@ Intelligent Government Scheme Eligibility Engine
 
 📌 Overview
 
-CivicCompass AI is a cloud-based eligibility engine that helps citizens discover government welfare schemes they qualify for.
+CivicCompass  is a cloud-based eligibility engine that helps citizens discover government welfare schemes they qualify for.
 By entering basic demographic and economic details, users receive:
+
 ✅ Personalized scheme recommendations
 
 ✅ Clear eligibility explanations
@@ -22,8 +23,11 @@ By entering basic demographic and economic details, users receive:
 Millions of citizens struggle to identify which government schemes they are eligible for due to:
 
 Complex eligibility rules
+
 Scattered information sources
+
 Language barriers
+
 Lack of digital guidance
 
 
