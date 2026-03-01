@@ -66,22 +66,20 @@ Cloud Platform: AWS (Serverless Architecture)
 📂 Project Structure
 
 CivicCompass/
-│
+
 ├── frontend/
+
 ├── backend/
+  
 ├── data/
+  
 └── README.md
 
 🌍 Impact
+
+
+
 Improves accessibility to welfare schemes
 Promotes inclusive governance
 Supports Digital India initiatives
 Scalable for nationwide deployment
-
-
-🚀 Deployment
-
-The project will be deployed using AWS Learner Labs during the Hackathon (March 7–8).
-
-
--
