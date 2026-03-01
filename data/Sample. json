@@ -1,0 +1,92 @@
+[
+  {
+    "scheme_id": "S001",
+    "name": "PM Kisan Samman Nidhi",
+    "min_age": 18,
+    "max_income": 600000,
+    "category": "Any",
+    "occupation": "Farmer",
+    "description": "Financial assistance of ₹6000 per year to eligible farmers."
+  },
+  {
+    "scheme_id": "S002",
+    "name": "Post Matric Scholarship",
+    "min_age": 17,
+    "max_income": 300000,
+    "category": "SC",
+    "occupation": "Student",
+    "description": "Scholarship for SC students pursuing higher education."
+  },
+  {
+    "scheme_id": "S003",
+    "name": "Women Entrepreneurship Support",
+    "min_age": 21,
+    "max_income": 800000,
+    "category": "Any",
+    "occupation": "Entrepreneur",
+    "description": "Financial support for women entrepreneurs."
+  },
+  {
+    "scheme_id": "S004",
+    "name": "Ayushman Health Protection",
+    "min_age": 0,
+    "max_income": 500000,
+    "category": "Any",
+    "occupation": "Any",
+    "description": "Health insurance coverage for economically weaker families."
+  },
+  {
+    "scheme_id": "S005",
+    "name": "Senior Citizen Pension Scheme",
+    "min_age": 60,
+    "max_income": 400000,
+    "category": "Any",
+    "occupation": "Any",
+    "description": "Monthly pension for senior citizens."
+  },
+  {
+    "scheme_id": "S006",
+    "name": "Skill Development Training Program",
+    "min_age": 18,
+    "max_income": 500000,
+    "category": "OBC",
+    "occupation": "Unemployed",
+    "description": "Skill training and certification for unemployed youth."
+  },
+  {
+    "scheme_id": "S007",
+    "name": "Startup Seed Fund Scheme",
+    "min_age": 21,
+    "max_income": 1000000,
+    "category": "Any",
+    "occupation": "Entrepreneur",
+    "description": "Seed funding support for innovative startups."
+  },
+  {
+    "scheme_id": "S008",
+    "name": "Girl Child Education Support",
+    "min_age": 5,
+    "max_income": 300000,
+    "category": "Any",
+    "occupation": "Student",
+    "description": "Financial support for girl child education."
+  },
+  {
+    "scheme_id": "S009",
+    "name": "Housing Assistance Scheme",
+    "min_age": 18,
+    "max_income": 400000,
+    "category": "Any",
+    "occupation": "Any",
+    "description": "Subsidized housing support for low-income families."
+  },
+  {
+    "scheme_id": "S010",
+    "name": "Agriculture Equipment Subsidy",
+    "min_age": 18,
+    "max_income": 700000,
+    "category": "Any",
+    "occupation": "Farmer",
+    "description": "Subsidy on purchase of agricultural equipment."
+  }
+]
