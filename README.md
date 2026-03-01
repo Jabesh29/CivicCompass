@@ -1,6 +1,6 @@
 # CivicCompass
 
-🚀 CivicCompass AI
+🚀 CivicCompass 
 
 Intelligent Government Scheme Eligibility Engine
 
@@ -65,12 +65,11 @@ Cloud Platform: AWS (Serverless Architecture)
 
 📂 Project Structure
 
-bharatscheme-ai/
+CivicCompass/
 │
 ├── frontend/
 ├── backend/
 ├── data/
-├── architecture/
 └── README.md
 
 🌍 Impact
