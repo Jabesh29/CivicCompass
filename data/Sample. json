@@ -88,5 +88,96 @@
     "category": "Any",
     "occupation": "Farmer",
     "description": "Subsidy on purchase of agricultural equipment."
+  },
+
+  {
+    "scheme_id": "S011",
+    "name": "National Rural Employment Scheme",
+    "min_age": 18,
+    "max_income": 350000,
+    "category": "Any",
+    "occupation": "Unemployed",
+    "description": "Provides guaranteed wage employment for rural households."
+  },
+  {
+    "scheme_id": "S012",
+    "name": "Minority Education Scholarship",
+    "min_age": 16,
+    "max_income": 250000,
+    "category": "OBC",
+    "occupation": "Student",
+    "description": "Scholarship support for minority students."
+  },
+  {
+    "scheme_id": "S013",
+    "name": "Women Self Help Group Loan Scheme",
+    "min_age": 21,
+    "max_income": 600000,
+    "category": "Any",
+    "occupation": "Self-Employed",
+    "description": "Low-interest loans for women self-help groups."
+  },
+  {
+    "scheme_id": "S014",
+    "name": "Disability Assistance Program",
+    "min_age": 5,
+    "max_income": 400000,
+    "category": "Any",
+    "occupation": "Any",
+    "description": "Financial support for persons with disabilities."
+  },
+  {
+    "scheme_id": "S015",
+    "name": "Youth Innovation Grant",
+    "min_age": 18,
+    "max_income": 800000,
+    "category": "Any",
+    "occupation": "Student",
+    "description": "Grant for innovative projects by youth."
+  },
+  {
+    "scheme_id": "S016",
+    "name": "Urban Livelihood Mission",
+    "min_age": 18,
+    "max_income": 450000,
+    "category": "Any",
+    "occupation": "Unemployed",
+    "description": "Skill and financial assistance for urban unemployed citizens."
+  },
+  {
+    "scheme_id": "S017",
+    "name": "Farmer Crop Insurance Scheme",
+    "min_age": 18,
+    "max_income": 900000,
+    "category": "Any",
+    "occupation": "Farmer",
+    "description": "Insurance protection against crop failure."
+  },
+  {
+    "scheme_id": "S018",
+    "name": "Senior Women Welfare Scheme",
+    "min_age": 55,
+    "max_income": 500000,
+    "category": "Any",
+    "occupation": "Any",
+    "description": "Special financial assistance for senior women citizens."
+  },
+  {
+    "scheme_id": "S019",
+    "name": "Education Loan Interest Subsidy",
+    "min_age": 18,
+    "max_income": 600000,
+    "category": "Any",
+    "occupation": "Student",
+    "description": "Interest subsidy on higher education loans."
+  },
+  {
+    "scheme_id": "S020",
+    "name": "Micro Business Support Scheme",
+    "min_age": 21,
+    "max_income": 750000,
+    "category": "Any",
+    "occupation": "Entrepreneur",
+    "description": "Financial support for small and micro businesses."
   }
 ]
