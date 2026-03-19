@@ -2,46 +2,166 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>CivicCompass AI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CivicCompass — Find Your Schemes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <h1>CivicCompass AI</h1>
-        <p class="subtitle">Find Government Schemes You Are Eligible For</p>
+    <!-- HEADER -->
+    <header class="site-header">
+        <div class="logo">
+            <span class="logo-icon">◈</span>
+            <span class="logo-text">CivicCompass</span>
+        </div>
+        <p class="tagline">Government Scheme Eligibility Checker</p>
+    </header>
 
-        <form id="eligibilityForm">
-            <label>Age</label>
-            <input type="number" id="age" required>
+    <!-- SCREEN 1: FORM -->
+    <main id="screen-form" class="screen active">
+        <div class="form-wrapper">
 
-            <label>Annual Income (₹)</label>
-            <input type="number" id="income" required>
+            <div class="form-intro">
+                <h1>Discover schemes <em>built for you</em></h1>
+                <p>Enter your details below and we'll match you with all government schemes and scholarships you're eligible for.</p>
+            </div>
 
-            <label>Category</label>
-            <select id="category">
-                <option value="General">General</option>
-                <option value="OBC">OBC</option>
-                <option value="SC">SC</option>
-                <option value="ST">ST</option>
-            </select>
+            <div class="form-card">
+                <div class="form-grid">
 
-            <label>Occupation</label>
-            <input type="text" id="occupation" required>
+                    <div class="field-group">
+                        <label for="age">Age</label>
+                        <input type="number" id="age" placeholder="e.g. 22" min="1" max="120">
+                    </div>
 
-            <label>Language</label>
-            <select id="language">
-                <option value="en">English</option>
-                <option value="ta">Tamil</option>
-                <option value="hi">Hindi</option>
-            </select>
+                    <div class="field-group">
+                        <label for="income">Annual Income (₹)</label>
+                        <input type="number" id="income" placeholder="e.g. 250000" min="0">
+                    </div>
 
-            <button type="submit">Check Eligibility</button>
-        </form>
+                    <div class="field-group">
+                        <label for="category">Caste Category</label>
+                        <div class="select-wrap">
+                            <select id="category">
+                                <option value="" disabled selected>Select category</option>
+                                <option value="BC">BC — Backward Class</option>
+                                <option value="MBC">MBC — Most Backward Class</option>
+                                <option value="OC">OC — Open/General</option>
+                                <option value="SC">SC — Scheduled Caste</option>
+                                <option value="ST">ST — Scheduled Tribe</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span class="select-arrow">↓</span>
+                        </div>
+                    </div>
 
-        <div id="result"></div>
+                    <div class="field-group">
+                        <label for="occupation">Occupation</label>
+                        <div class="select-wrap">
+                            <select id="occupation">
+                                <option value="" disabled selected>Select occupation</option>
+                                <option value="Farmer">Farmer</option>
+                                <option value="Student">Student</option>
+                                <option value="Unemployed">Unemployed</option>
+                                <option value="Entrepreneur">Entrepreneur</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span class="select-arrow">↓</span>
+                        </div>
+                    </div>
+
+                    <div class="field-group">
+                        <label for="gender">Gender</label>
+                        <div class="gender-pills" id="gender-pills">
+                            <button type="button" class="pill" data-value="Male">Male</button>
+                            <button type="button" class="pill" data-value="Female">Female</button>
+                            <button type="button" class="pill" data-value="Other">Other</button>
+                        </div>
+                        <input type="hidden" id="gender" value="">
+                    </div>
+
+                    <div class="field-group">
+                        <label for="state">State</label>
+                        <div class="select-wrap">
+                            <select id="state">
+                                <option value="" disabled selected>Select state</option>
+                                <option value="Andhra Pradesh">Andhra Pradesh</option>
+                                <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                                <option value="Assam">Assam</option>
+                                <option value="Bihar">Bihar</option>
+                                <option value="Chhattisgarh">Chhattisgarh</option>
+                                <option value="Goa">Goa</option>
+                                <option value="Gujarat">Gujarat</option>
+                                <option value="Haryana">Haryana</option>
+                                <option value="Himachal Pradesh">Himachal Pradesh</option>
+                                <option value="Jharkhand">Jharkhand</option>
+                                <option value="Karnataka">Karnataka</option>
+                                <option value="Kerala">Kerala</option>
+                                <option value="Madhya Pradesh">Madhya Pradesh</option>
+                                <option value="Maharashtra">Maharashtra</option>
+                                <option value="Manipur">Manipur</option>
+                                <option value="Meghalaya">Meghalaya</option>
+                                <option value="Mizoram">Mizoram</option>
+                                <option value="Nagaland">Nagaland</option>
+                                <option value="Odisha">Odisha</option>
+                                <option value="Punjab">Punjab</option>
+                                <option value="Rajasthan">Rajasthan</option>
+                                <option value="Sikkim">Sikkim</option>
+                                <option value="Tamil Nadu">Tamil Nadu</option>
+                                <option value="Telangana">Telangana</option>
+                                <option value="Tripura">Tripura</option>
+                                <option value="Uttar Pradesh">Uttar Pradesh</option>
+                                <option value="Uttarakhand">Uttarakhand</option>
+                                <option value="West Bengal">West Bengal</option>
+                                <option value="Other">Other / UT</option>
+                            </select>
+                            <span class="select-arrow">↓</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div id="form-error" class="form-error hidden">Please fill in all fields before checking.</div>
+
+                <button class="btn-primary" id="check-btn" onclick="check()">
+                    <span class="btn-text">Check Eligibility</span>
+                    <span class="btn-icon">→</span>
+                </button>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- SCREEN 2: RESULTS -->
+    <main id="screen-results" class="screen">
+        <div class="results-wrapper">
+
+            <div class="results-header">
+                <button class="btn-back" onclick="goBack()">
+                    <span>←</span> Back
+                </button>
+                <div class="results-title-block">
+                    <h2 id="results-heading">Eligible Schemes</h2>
+                    <p id="results-subheading" class="results-sub"></p>
+                </div>
+            </div>
+
+            <div id="results-grid" class="results-grid"></div>
+
+        </div>
+    </main>
+
+    <!-- LOADING OVERLAY -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loader-box">
+            <div class="spinner"></div>
+            <p>Finding your schemes…</p>
+        </div>
     </div>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
